@@ -5,3 +5,4 @@ scipy==1.10.0
 streamlit==1.16.0
 pickle==4.0
 pickle-mixin==1.0.2
+sklearn==1.2.0
