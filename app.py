@@ -25,7 +25,7 @@ def main():
 
     # @st.cache(allow_output_mutation=True)
     def get_model():
-       model = pickle.load(open(r'carPricePrediction','rb'))
+       model = pickle.load(open('carPricePrediction','rb'))
        return model
 
     st.write('')
