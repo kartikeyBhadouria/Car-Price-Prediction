@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 # Loading the saved model
-loaded_model = pickle.load(open(r'C:\Users\my pc\Desktop\ML Projects\Car Price Prediction\carPricePrediction','rb'))
+# loaded_model = pickle.load(open(r'carPricePrediction','rb'))
 
 # Creating a function for prediction
 def predictions(PresentPrice,YearsOld,Owner,FuelType,SellerType,TransmissionManual):
@@ -23,10 +23,10 @@ def main():
     
     st.markdown("##### This Web app helps user to predict the price of used cars 👨‍💻.\n##### So let's try evaluating the price.. 💰")
 
-    @st.cache(allow_output_mutation=True)
+    # @st.cache(allow_output_mutation=True)
     def get_model():
-        model = pickle.load(open(r'C:\Users\my pc\Desktop\ML Projects\Car Price Prediction\carPricePrediction','rb'))
-        return model
+       model = pickle.load(open(r'carPricePrediction','rb'))
+       return model
 
     st.write('')
     st.write('')
